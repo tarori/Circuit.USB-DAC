@@ -6436,7 +6436,7 @@ Takuo Sawada&lt;br&gt;
 <part name="C65" library="my_rcl" deviceset="C" device="-1608" value="1u"/>
 <part name="SUPPLY83" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="Q13" library="my_ic" deviceset="NPN" device="2SC3325"/>
-<part name="R49" library="my_rcl" deviceset="R" device="-7.5" value="330"/>
+<part name="R49" library="my_rcl" deviceset="R" device="-7.5" value="1k"/>
 <part name="SUPPLY84" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R48" library="my_rcl" deviceset="R" device="-1608" value="10k"/>
 <part name="SUPPLY85" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -6457,18 +6457,18 @@ Takuo Sawada&lt;br&gt;
 <part name="Q10" library="my_ic" deviceset="PNP" device="2SA1313"/>
 <part name="Q12" library="my_ic" deviceset="PNP" device="2SA1313"/>
 <part name="Q11" library="my_ic" deviceset="NPN" device="2SC3325"/>
-<part name="R40" library="my_rcl" deviceset="R" device="-2.5" value="10"/>
-<part name="R41" library="my_rcl" deviceset="R" device="-2.5" value="10"/>
+<part name="R40" library="my_rcl" deviceset="R" device="-2.5" value="1"/>
+<part name="R41" library="my_rcl" deviceset="R" device="-2.5" value="1"/>
 <part name="R44" library="my_rcl" deviceset="R" device="-2.5" value="1"/>
 <part name="R45" library="my_rcl" deviceset="R" device="-2.5" value="1"/>
 <part name="R43" library="my_rcl" deviceset="R" device="-2.5" value="1"/>
 <part name="R42" library="my_rcl" deviceset="R" device="-2.5" value="1"/>
-<part name="R38" library="my_rcl" deviceset="R" device="-2.5" value="10"/>
-<part name="R39" library="my_rcl" deviceset="R" device="-2.5" value="10"/>
-<part name="D8" library="my_rcl" deviceset="CRD" device="-2.5" value="1m"/>
-<part name="D9" library="my_rcl" deviceset="CRD" device="-2.5" value="1m"/>
-<part name="D10" library="my_rcl" deviceset="CRD" device="-2.5" value="1m"/>
-<part name="D11" library="my_rcl" deviceset="CRD" device="-2.5" value="1m"/>
+<part name="R38" library="my_rcl" deviceset="R" device="-2.5" value="1"/>
+<part name="R39" library="my_rcl" deviceset="R" device="-2.5" value="1"/>
+<part name="D8" library="my_rcl" deviceset="CRD" device="-2.5" value="4.5m"/>
+<part name="D9" library="my_rcl" deviceset="CRD" device="-2.5" value="4.5m"/>
+<part name="D10" library="my_rcl" deviceset="CRD" device="-2.5" value="4.5m"/>
+<part name="D11" library="my_rcl" deviceset="CRD" device="-2.5" value="4.5m"/>
 <part name="R46" library="my_rcl" deviceset="R" device="-2.5" value="1"/>
 <part name="R47" library="my_rcl" deviceset="R" device="-2.5" value="1"/>
 <part name="Q7" library="my_ic" deviceset="PNP" device="2SA1313"/>
