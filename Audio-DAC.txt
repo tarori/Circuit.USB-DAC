@@ -1,0 +1,75 @@
+Partlist exported from C:/Users/ritaro/Documents/EAGLE/projects/Audio-DAC-v5-AK4495/Audio-DAC.sch at 2020/07/04 0:53
+
+Qty Value            Device           Package       Parts                                                                                              Description 
+1   !RESET           TESTPIN          TESTPIN       TP2                                                                                                            
+2   +12V             TESTPIN          TESTPIN       TP20, TP22                                                                                                     
+2   +3V3             TESTPIN          TESTPIN       TP7, TP14                                                                                                      
+1   -15V             79X-LED          REGULATOR_LED IC10                                                                                                           
+1   -9V              79X-LED          REGULATOR_LED IC4                                                                                                            
+20  0.1u             C-1608           1608          C35, C36, C37, C39, C40, C41, C42, C43, C44, C45, C48, C50, C51, C53, C54, C56, C57, C58, C59, C60             
+4   0.22u            C-1608           1608          C6, C7, C23, C29                                                                                               
+2   1                R-10             0207/10       R3, R12                                                                                                        
+4   1                R-2.5            0207/2V       R4, R7, R18, R21                                                                                               
+3   1.5k             R-1608           1608          R27, R28, R32                                                                                                  
+3   100              R-5              0204/5        R14, R15, R16                                                                                                  
+4   1000p            C-1608           1608          C8, C21, C30, C33                                                                                              
+2   1000u            CPOLE5-10        E5-10         C10, C25                                                                                                       
+4   1000u            CPOLE5-13        E5-13         C9, C11, C24, C26                                                                                              
+6   100u             CPOLE2.5-6.5     E2.5-6.5      C4, C5, C13, C16, C27, C52                                                                                     
+2   100u             CPOLE2.5-8       E2,5-8        C1, C2                                                                                                         
+12  10k              R-1608           1608          R29, R30, R33, R34, R36, R37, R38, R41, R42, R44, R45, R46                                                     
+1   10p              C-1608           1608          C38                                                                                                            
+4   10u              C-2012           2012          C28, C32, C49, C55                                                                                             
+1   12MHz            CRYSTALHC49S     HC49/S        X3                                                                                                 CRYSTAL     
+1   15V              78X-LED          REGULATOR_LED IC7                                                                                                            
+1   1M               R-5              0204/5        R43                                                                                                            
+4   1N4148           DIODE-2          D0207/2V      D1, D2, D3, D4                                                                                                 
+2   1k               R-1608           1608          R47, R48                                                                                                       
+12  1k               R-2.5            0207/2V       R1, R5, R6, R8, R9, R11, R13, R19, R20, R22, R23, R25                                                          
+2   1u               L-7              L7-10         L1, L2                                                                                                         
+4   2000p            C-1608           1608          C12, C22, C31, C34                                                                                             
+1   22.5792MHz       OSC-KC7050       KC7050        X1                                                                                                             
+3   220u             CPOLE2.5-8       E2,5-8        C3, C17, C20                                                                                                   
+2   22p              C-1608           1608          C46, C47                                                                                                       
+1   24.576MHz        OSC-KC7050       KC7050        X2                                                                                                             
+4   2k               R-2.5            0207/2V       R2, R10, R17, R24                                                                                              
+1   3.3V             78X-LED          REGULATOR_LED IC6                                                                                                            
+1   3.3v             NJM2863          SOT23-5       IC14                                                                                                           
+4   37               R-1608           1608          R26, R31, R39, R40                                                                                             
+2   5V               78X-LED          REGULATOR_LED IC3, IC5                                                                                                       
+1   6.80k            R-1608           1608          R35                                                                                                            
+1   7805             78X-1            TO-220        IC13                                                                                                           
+1   7812             78X-1            TO-220        IC2                                                                                                            
+1   9V               78X-LED          REGULATOR_LED IC1                                                                                                            
+1   AK4495EQ         AK4495EQ         LQFP44        IC9                                                                                                            
+1   AT32UC3A3256     AT32UC3A3256     TQFP144       IC11                                                                                                           
+4   DNP              C-1608           1608          C14, C15, C18, C19                                                                                             
+2   EA2              EA2              EA2           SW1, SW2                                                                                                       
+3   FB-1608          FB-1608          1608          FB1, FB2, FB3                                                                                                  
+4   GND              TESTPIN          TESTPIN       TP8, TP13, TP17, TP21                                                                                          
+2   GND              TESTPIN-BIG      TESTPIN-BIG   TP4, TP5                                                                                                       
+1   GREEN            LED-SMD1608      D1608         D7                                                                                                             
+4   HOLE-3.2         HOLE-3.2         HOLE_3.2      DR1, DR2, DR3, DR4                                                                                             
+1   HP               PINHD-1X4        1X04          JP2                                                                                                PIN HEADER  
+2   HP_SW            TESTPIN          TESTPIN       TP16, TP19                                                                                                     
+1   LPC1114FDH28     LPC1114FDH28     TSSOP28       IC12                                                                                                           
+2   NPN2SC3325       NPN2SC3325       SC59          Q5, Q6                                                                                                         
+2   NPN2SC3422       NPN2SC3422       TO126         Q1, Q3                                                                                                         
+1   OP275            OPA-2'           DIL08         IC8                                                                                                            
+2   PNP2SA1359       PNP2SA1359       TO126         Q2, Q4                                                                                                         
+1   PROG             TESTPIN          TESTPIN       TP1                                                                                                            
+1   RED              LED-SMD1608      D1608         D8                                                                                                             
+2   SBD-1A           SBD-1A           TUMD2M        D5, D6                                                                                                         
+1   SPK              PINHD-1X4        1X04          JP1                                                                                                PIN HEADER  
+2   SP_SW            TESTPIN          TESTPIN       TP15, TP18                                                                                                     
+1   SWD              PINHD-1X5        1X05          JP3                                                                                                PIN HEADER  
+1   TC7WH74FU        TC7WH74FU        SSOP8-P-0.65  IC16                                                                                                           
+1   TC7WU04FU        TC7WU04FU        SSOP8-P-0.65  IC15                                                                                                           
+1   TEST_1           TESTPIN          TESTPIN       TP9                                                                                                            
+1   TEST_2           TESTPIN          TESTPIN       TP10                                                                                                           
+1   TEST_4           TESTPIN          TESTPIN       TP11                                                                                                           
+1   TEST_6           TESTPIN          TESTPIN       TP12                                                                                                           
+1   USB-5075BR-04-WH USB-5075BR-04-WH 5075BR-04-WH  CON1                                                                                                           
+1   VIN+             TESTPIN-BIG      TESTPIN-BIG   TP3                                                                                                            
+1   VIN-             TESTPIN-BIG      TESTPIN-BIG   TP6                                                                                                            
+1   VOL              PINHD-1X3        1X03          JP4                                                                                                PIN HEADER  
