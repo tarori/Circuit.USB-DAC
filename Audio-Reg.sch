@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -653,7 +653,22 @@ type 0207, grid 10 mm</description>
 <wire x1="0.9" y1="0.6" x2="0.9" y2="-0.6" width="0.0508" layer="39"/>
 <wire x1="0.9" y1="-0.6" x2="-0.9" y2="-0.6" width="0.0508" layer="39"/>
 </package>
-<package name="C025-025X050">
+<package name="3225">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<smd name="1" x="-1.5" y="0" dx="1" dy="1.7" layer="1"/>
+<smd name="2" x="1.5" y="0" dx="1" dy="1.7" layer="1"/>
+<text x="-1.27" y="1.27" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="0.8128" layer="27">&gt;VALUE</text>
+<wire x1="2.4" y1="-1.2" x2="2.4" y2="1.2" width="0.127" layer="21"/>
+<wire x1="2.4" y1="1.2" x2="-2.4" y2="1.2" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="1.2" x2="-2.4" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="-1.2" x2="2.4" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="1.1" x2="-2.3" y2="-1.1" width="0.0508" layer="39"/>
+<wire x1="-2.3" y1="-1.1" x2="2.3" y2="-1.1" width="0.0508" layer="39"/>
+<wire x1="2.3" y1="-1.1" x2="2.3" y2="1.1" width="0.0508" layer="39"/>
+<wire x1="2.3" y1="1.1" x2="-2.3" y2="1.1" width="0.0508" layer="39"/>
+</package>
+<package name="C025">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
 grid 2.5 mm, outline 2.5 x 5 mm</description>
 <wire x1="-2.159" y1="1.27" x2="2.159" y2="1.27" width="0.1524" layer="21"/>
@@ -677,7 +692,7 @@ grid 2.5 mm, outline 2.5 x 5 mm</description>
 <text x="-2.286" y="1.524" size="0.8128" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.286" y="-2.794" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="C050-030X075">
+<package name="C050">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
 grid 5 mm, outline 3 x 7.5 mm</description>
 <wire x1="-0.3048" y1="0.635" x2="-0.3048" y2="0" width="0.3048" layer="21"/>
@@ -698,21 +713,80 @@ grid 5 mm, outline 3 x 7.5 mm</description>
 <pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
 <text x="-3.556" y="1.905" size="0.8128" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.556" y="-3.048" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-3.81" y1="1.5875" x2="-3.81" y2="-1.5875" width="0.0508" layer="39"/>
+<wire x1="-3.81" y1="-1.5875" x2="3.81" y2="-1.5875" width="0.0508" layer="39"/>
+<wire x1="3.81" y1="-1.5875" x2="3.81" y2="1.5875" width="0.0508" layer="39"/>
+<wire x1="3.81" y1="1.5875" x2="-3.81" y2="1.5875" width="0.0508" layer="39"/>
 </package>
-<package name="3225">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<smd name="1" x="-1.5" y="0" dx="1" dy="1.7" layer="1"/>
-<smd name="2" x="1.5" y="0" dx="1" dy="1.7" layer="1"/>
-<text x="-1.27" y="1.27" size="0.8128" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="0.8128" layer="27">&gt;VALUE</text>
-<wire x1="2.4" y1="-1.2" x2="2.4" y2="1.2" width="0.127" layer="21"/>
-<wire x1="2.4" y1="1.2" x2="-2.4" y2="1.2" width="0.127" layer="21"/>
-<wire x1="-2.4" y1="1.2" x2="-2.4" y2="-1.2" width="0.127" layer="21"/>
-<wire x1="-2.4" y1="-1.2" x2="2.4" y2="-1.2" width="0.127" layer="21"/>
-<wire x1="-2.3" y1="1.1" x2="-2.3" y2="-1.1" width="0.0508" layer="39"/>
-<wire x1="-2.3" y1="-1.1" x2="2.3" y2="-1.1" width="0.0508" layer="39"/>
-<wire x1="2.3" y1="-1.1" x2="2.3" y2="1.1" width="0.0508" layer="39"/>
-<wire x1="2.3" y1="1.1" x2="-2.3" y2="1.1" width="0.0508" layer="39"/>
+<package name="C100">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 5 mm, outline 3 x 7.5 mm</description>
+<wire x1="-0.3048" y1="0.635" x2="-0.3048" y2="0" width="0.3048" layer="21"/>
+<wire x1="-0.3048" y1="0" x2="-0.3048" y2="-0.635" width="0.3048" layer="21"/>
+<wire x1="-0.3048" y1="0" x2="-2.794" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.3302" y1="0.635" x2="0.3302" y2="0" width="0.3048" layer="21"/>
+<wire x1="0.3302" y1="0" x2="0.3302" y2="-0.635" width="0.3048" layer="21"/>
+<wire x1="0.3302" y1="0" x2="2.794" y2="0" width="0.1524" layer="21"/>
+<wire x1="-4.953" y1="1.27" x2="-4.953" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-4.699" y1="-1.524" x2="4.699" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="4.953" y1="-1.27" x2="4.953" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="4.699" y1="1.524" x2="-4.699" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="4.699" y1="1.524" x2="4.953" y2="1.27" width="0.1524" layer="21" curve="-90"/>
+<wire x1="4.699" y1="-1.524" x2="4.953" y2="-1.27" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.953" y1="-1.27" x2="-4.699" y2="-1.524" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.953" y1="1.27" x2="-4.699" y2="1.524" width="0.1524" layer="21" curve="-90"/>
+<pad name="1" x="-3.81" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="3.81" y="0" drill="0.8128" shape="octagon"/>
+<text x="-4.826" y="1.905" size="0.8128" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.556" y="-3.048" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-5.08" y1="1.5875" x2="-5.08" y2="-1.5875" width="0.0508" layer="39"/>
+<wire x1="-5.08" y1="-1.5875" x2="5.08" y2="-1.5875" width="0.0508" layer="39"/>
+<wire x1="5.08" y1="-1.5875" x2="5.08" y2="1.5875" width="0.0508" layer="39"/>
+<wire x1="5.08" y1="1.5875" x2="-5.08" y2="1.5875" width="0.0508" layer="39"/>
+</package>
+<package name="X-CAPACITER">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 5 mm, outline 3 x 7.5 mm</description>
+<pad name="1" x="-7.5" y="0" drill="1.2" shape="octagon"/>
+<pad name="2" x="7.5" y="0" drill="1.2" shape="octagon"/>
+<text x="-8.001" y="4.7625" size="0.8128" layer="25" ratio="10">&gt;NAME</text>
+<text x="-6.096" y="-3.048" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-0.635" y1="1.27" x2="-0.635" y2="0" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="0.635" y2="0" width="0.254" layer="21"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-5.08" y2="0" width="0.127" layer="21"/>
+<wire x1="0.635" y1="0" x2="5.08" y2="0" width="0.127" layer="21"/>
+<wire x1="-9" y1="4.5" x2="-9" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-9" y1="-4.5" x2="9" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="9" y1="4.5" x2="-9" y2="4.5" width="0.127" layer="21"/>
+<wire x1="9" y1="4.5" x2="9" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="4.445" x2="-8.89" y2="-4.445" width="0.0508" layer="39"/>
+<wire x1="-8.89" y1="-4.445" x2="8.89" y2="-4.445" width="0.0508" layer="39"/>
+<wire x1="8.89" y1="-4.445" x2="8.89" y2="4.445" width="0.0508" layer="39"/>
+<wire x1="8.89" y1="4.445" x2="-8.89" y2="4.445" width="0.0508" layer="39"/>
+</package>
+<package name="Y-CAPACITER">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 5 mm, outline 3 x 7.5 mm</description>
+<pad name="1" x="-3.81" y="0" drill="1" diameter="2"/>
+<pad name="2" x="3.81" y="0" drill="1" diameter="2"/>
+<text x="-4.826" y="1.905" size="0.8128" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.556" y="-3.048" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-5.08" y1="1.5" x2="-5.08" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.5" x2="5.08" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.5" x2="5.08" y2="1.5" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.5" x2="-5.08" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-0.635" width="0.254" layer="21"/>
+<wire x1="0.635" y1="-0.635" x2="0.635" y2="0" width="0.254" layer="21"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="0.635" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="1.5875" x2="-5.08" y2="-1.5875" width="0.0508" layer="39"/>
+<wire x1="-5.08" y1="-1.5875" x2="5.08" y2="-1.5875" width="0.0508" layer="39"/>
+<wire x1="5.08" y1="-1.5875" x2="5.08" y2="1.5875" width="0.0508" layer="39"/>
+<wire x1="5.08" y1="1.5875" x2="-5.08" y2="1.5875" width="0.0508" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -915,7 +989,7 @@ grid 5 mm, outline 3 x 7.5 mm</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-2.5" package="C025-025X050">
+<device name="-2.5" package="C025">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -924,7 +998,7 @@ grid 5 mm, outline 3 x 7.5 mm</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-5" package="C050-030X075">
+<device name="-5" package="C050">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -934,6 +1008,33 @@ grid 5 mm, outline 3 x 7.5 mm</description>
 </technologies>
 </device>
 <device name="-3225" package="3225">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-10" package="C100">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-X" package="X-CAPACITER">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-Y" package="Y-CAPACITER">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1107,6 +1208,7 @@ grid 5 mm, outline 3 x 7.5 mm</description>
 <part name="Q3" library="my_ic" deviceset="PNP" device="2SA1313"/>
 <part name="R1" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
 <part name="R4" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
+<part name="C7" library="my_rcl" deviceset="C" device="-1608" value="100p"/>
 </parts>
 <sheets>
 <sheet>
@@ -1185,6 +1287,10 @@ grid 5 mm, outline 3 x 7.5 mm</description>
 <attribute name="NAME" x="1.0414" y="24.13" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="5.842" y="24.13" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="C7" gate="G$1" x="22.86" y="20.32" smashed="yes">
+<attribute name="NAME" x="23.622" y="21.971" size="1.778" layer="95"/>
+<attribute name="VALUE" x="23.622" y="17.907" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1218,8 +1324,9 @@ grid 5 mm, outline 3 x 7.5 mm</description>
 <net name="N$3" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="B"/>
-<wire x1="20.32" y1="15.24" x2="30.48" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="15.24" x2="22.86" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="15.24" x2="30.48" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="15.24" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="15.24" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
@@ -1227,6 +1334,9 @@ grid 5 mm, outline 3 x 7.5 mm</description>
 <wire x1="30.48" y1="15.24" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="15.24" x2="35.56" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="17.78" x2="22.86" y2="15.24" width="0.1524" layer="91"/>
+<junction x="22.86" y="15.24"/>
 </segment>
 </net>
 <net name="OUT" class="0">
@@ -1366,6 +1476,10 @@ grid 5 mm, outline 3 x 7.5 mm</description>
 <pinref part="Q2" gate="G$1" pin="C"/>
 <wire x1="7.62" y1="20.32" x2="15.24" y2="20.32" width="0.1524" layer="91"/>
 <junction x="7.62" y="20.32"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="22.86" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="22.86" x2="15.24" y2="20.32" width="0.1524" layer="91"/>
+<junction x="15.24" y="20.32"/>
 </segment>
 </net>
 </nets>
