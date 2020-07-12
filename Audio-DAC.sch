@@ -790,10 +790,10 @@ shrink quad flat pack, square (smd-ipc)</description>
 <wire x1="1.85" y1="-2.25" x2="1.85" y2="2.25" width="0.127" layer="21"/>
 <wire x1="1.85" y1="2.25" x2="-1.85" y2="2.25" width="0.127" layer="21"/>
 <wire x1="-0.8" y1="-2.25" x2="-1.85" y2="-1.2" width="0.127" layer="21"/>
-<wire x1="2" y1="-3.85" x2="-2" y2="-3.85" width="0.0508" layer="41"/>
-<wire x1="-2" y1="-3.85" x2="-2" y2="3.85" width="0.0508" layer="41"/>
-<wire x1="-2" y1="3.85" x2="2" y2="3.85" width="0.0508" layer="41"/>
-<wire x1="2" y1="3.85" x2="2" y2="-3.85" width="0.0508" layer="41"/>
+<wire x1="2" y1="-3.85" x2="-2" y2="-3.85" width="0.0508" layer="39"/>
+<wire x1="-2" y1="-3.85" x2="-2" y2="3.85" width="0.0508" layer="39"/>
+<wire x1="-2" y1="3.85" x2="2" y2="3.85" width="0.0508" layer="39"/>
+<wire x1="2" y1="3.85" x2="2" y2="-3.85" width="0.0508" layer="39"/>
 <text x="-2.2225" y="-1.905" size="0.8128" layer="25" rot="R90">&gt;NAME</text>
 <text x="2.8575" y="-2.2225" size="0.8128" layer="27" rot="R90">&gt;VALUE</text>
 </package>
@@ -4532,7 +4532,6 @@ type 0207, grid 10 mm</description>
 <part name="IC1" library="my_ic" deviceset="NJM2863" device="" value="3.3V 200mA"/>
 <part name="C2" library="my_rcl" deviceset="C" device="-1608" value="0.1u"/>
 <part name="C4" library="my_rcl" deviceset="C" device="-2012" value="22u"/>
-<part name="C1" library="my_rcl" deviceset="C" device="-2012" value="22u"/>
 <part name="SUPPLY44" library="my_supply" deviceset="DGND" device=""/>
 <part name="SUPPLY45" library="my_supply" deviceset="DGND" device=""/>
 <part name="SUPPLY46" library="my_supply" deviceset="DGND" device=""/>
@@ -4684,9 +4683,9 @@ type 0207, grid 10 mm</description>
 <part name="SUPPLY99" library="my_supply" deviceset="GND" device=""/>
 <part name="R24" library="my_rcl" deviceset="R" device="-10" value="1"/>
 <part name="R25" library="my_rcl" deviceset="R" device="-10" value="1"/>
-<part name="R29" library="my_rcl" deviceset="R" device="-5" value="100"/>
-<part name="R31" library="my_rcl" deviceset="R" device="-5" value="100"/>
-<part name="R30" library="my_rcl" deviceset="R" device="-5" value="100"/>
+<part name="R29" library="my_rcl" deviceset="R" device="-1608" value="100"/>
+<part name="R31" library="my_rcl" deviceset="R" device="-1608" value="100"/>
+<part name="R30" library="my_rcl" deviceset="R" device="-1608" value="100"/>
 <part name="DR1" library="my_connector" deviceset="HOLE-3.2" device=""/>
 <part name="DR3" library="my_connector" deviceset="HOLE-3.2" device=""/>
 <part name="DR2" library="my_connector" deviceset="HOLE-3.2" device=""/>
@@ -5080,10 +5079,6 @@ type 0207, grid 10 mm</description>
 <attribute name="NAME" x="1.27" y="59.055" size="1.778" layer="95"/>
 <attribute name="VALUE" x="1.27" y="56.515" size="1.778" layer="96"/>
 </instance>
-<instance part="C1" gate="G$1" x="-35.56" y="58.42" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-36.83" y="59.055" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="-36.83" y="56.515" size="1.778" layer="96" rot="MR0"/>
-</instance>
 <instance part="SUPPLY44" gate="G$1" x="-35.56" y="53.34" smashed="yes"/>
 <instance part="SUPPLY45" gate="G$1" x="-7.62" y="50.8" smashed="yes"/>
 <instance part="SUPPLY46" gate="G$1" x="0" y="53.34" smashed="yes"/>
@@ -5342,11 +5337,9 @@ type 0207, grid 10 mm</description>
 <pinref part="SUPPLY43" gate="G$1" pin="DGND"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <wire x1="-35.56" y1="55.88" x2="-33.02" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="SUPPLY44" gate="G$1" pin="DGND"/>
-<junction x="-35.56" y="55.88"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -5635,12 +5628,8 @@ type 0207, grid 10 mm</description>
 <pinref part="IC1" gate="G$1" pin="CONTROL"/>
 <pinref part="IC1" gate="G$1" pin="VIN"/>
 <wire x1="-33.02" y1="60.96" x2="-33.02" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="66.04" x2="-35.56" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-33.02" y="66.04"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="-35.56" y1="66.04" x2="-35.56" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="66.04" x2="-38.1" y2="66.04" width="0.1524" layer="91"/>
-<junction x="-35.56" y="66.04"/>
+<wire x1="-33.02" y1="66.04" x2="-38.1" y2="66.04" width="0.1524" layer="91"/>
 <label x="-38.1" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
