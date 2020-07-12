@@ -4354,14 +4354,14 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="SUPPLY25" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY26" library="my_supply" deviceset="V+" device=""/>
 <part name="IC8" library="my_ic" deviceset="OPA-2" device="'" package3d_urn="urn:adsk.eagle:package:16409/2" value="OP275"/>
-<part name="R5" library="my_rcl" deviceset="R" device="-2.5" value="1k"/>
-<part name="R8" library="my_rcl" deviceset="R" device="-2.5" value="1k"/>
-<part name="R10" library="my_rcl" deviceset="R" device="-2.5" value="2k"/>
-<part name="R2" library="my_rcl" deviceset="R" device="-2.5" value="2k"/>
-<part name="R19" library="my_rcl" deviceset="R" device="-2.5" value="1k"/>
-<part name="R22" library="my_rcl" deviceset="R" device="-2.5" value="1k"/>
-<part name="R24" library="my_rcl" deviceset="R" device="-2.5" value="2k"/>
-<part name="R17" library="my_rcl" deviceset="R" device="-2.5" value="2k"/>
+<part name="R5" library="my_rcl" deviceset="R" device="-2.5" value="2k"/>
+<part name="R8" library="my_rcl" deviceset="R" device="-2.5" value="2k"/>
+<part name="R10" library="my_rcl" deviceset="R" device="-2.5" value="4k"/>
+<part name="R2" library="my_rcl" deviceset="R" device="-2.5" value="4k"/>
+<part name="R19" library="my_rcl" deviceset="R" device="-2.5" value="2k"/>
+<part name="R22" library="my_rcl" deviceset="R" device="-2.5" value="2k"/>
+<part name="R24" library="my_rcl" deviceset="R" device="-2.5" value="4k"/>
+<part name="R17" library="my_rcl" deviceset="R" device="-2.5" value="4k"/>
 <part name="C21" library="my_rcl" deviceset="C" device="-1608" value="1000p"/>
 <part name="C8" library="my_rcl" deviceset="C" device="-1608" value="1000p"/>
 <part name="C30" library="my_rcl" deviceset="C" device="-1608" value="1000p"/>
@@ -4545,14 +4545,14 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="DR2" library="my_connector" deviceset="HOLE-3.2" device=""/>
 <part name="DR3" library="my_connector" deviceset="HOLE-3.2" device=""/>
 <part name="DR4" library="my_connector" deviceset="HOLE-3.2" device=""/>
-<part name="R6" library="my_rcl" deviceset="R" device="-2.5" value="1k"/>
-<part name="R9" library="my_rcl" deviceset="R" device="-2.5" value="1k"/>
-<part name="R20" library="my_rcl" deviceset="R" device="-2.5" value="1k"/>
-<part name="R23" library="my_rcl" deviceset="R" device="-2.5" value="1k"/>
-<part name="C12" library="my_rcl" deviceset="C" device="-1608" value="2000p"/>
-<part name="C22" library="my_rcl" deviceset="C" device="-1608" value="2000p"/>
-<part name="C31" library="my_rcl" deviceset="C" device="-1608" value="2000p"/>
-<part name="C34" library="my_rcl" deviceset="C" device="-1608" value="2000p"/>
+<part name="R6" library="my_rcl" deviceset="R" device="-2.5" value="150"/>
+<part name="R9" library="my_rcl" deviceset="R" device="-2.5" value="150"/>
+<part name="R20" library="my_rcl" deviceset="R" device="-2.5" value="150"/>
+<part name="R23" library="my_rcl" deviceset="R" device="-2.5" value="150"/>
+<part name="C12" library="my_rcl" deviceset="C" device="-1608" value="0.01u"/>
+<part name="C22" library="my_rcl" deviceset="C" device="-1608" value="0.01u"/>
+<part name="C31" library="my_rcl" deviceset="C" device="-1608" value="0.01u"/>
+<part name="C34" library="my_rcl" deviceset="C" device="-1608" value="0.01u"/>
 <part name="SUPPLY74" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY75" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY76" library="my_supply" deviceset="GND" device=""/>
