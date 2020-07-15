@@ -7476,7 +7476,7 @@ type 0207, grid 10 mm</description>
 <part name="SUPPLY69" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY70" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY71" library="my_supply" deviceset="GND" device=""/>
-<part name="IC14" library="my_ic" deviceset="78X" device="-1" value="7812"/>
+<part name="IC14" library="my_ic" deviceset="78X" device="-LED" value="10V"/>
 <part name="IC15" library="my_ic" deviceset="78X" device="-LED" value="5V"/>
 <part name="IC16" library="my_ic" deviceset="78X" device="-LED" value="5V"/>
 <part name="IC17" library="my_ic" deviceset="78X" device="-LED" value="3.3V"/>
@@ -7527,8 +7527,8 @@ type 0207, grid 10 mm</description>
 <part name="C59" library="my_rcl" deviceset="CPOL" device="E2.5-8" value="100u"/>
 <part name="C60" library="my_rcl" deviceset="CPOL" device="E2.5-8" value="100u"/>
 <part name="SUPPLY82" library="my_supply" deviceset="GND" device=""/>
-<part name="IC21" library="my_ic" deviceset="78X" device="-LED" value="9V"/>
-<part name="IC22" library="my_ic" deviceset="79X" device="-LED" value="-9V"/>
+<part name="IC21" library="my_ic" deviceset="78X" device="-LED" value="10V"/>
+<part name="IC22" library="my_ic" deviceset="79X" device="-LED" value="-10V"/>
 <part name="SUPPLY83" library="my_supply" deviceset="GND" device=""/>
 <part name="C40" library="my_rcl" deviceset="CPOL" device="E2.5-6.5" value="100u"/>
 <part name="SUPPLY84" library="my_supply" deviceset="GND" device=""/>
@@ -7675,6 +7675,7 @@ type 0207, grid 10 mm</description>
 <part name="R24" library="my_rcl" deviceset="R" device="-1608" value="10k"/>
 <part name="R26" library="my_rcl" deviceset="R" device="-1608" value="1.5k"/>
 <part name="SUPPLY132" library="my_supply" deviceset="GND" device=""/>
+<part name="FB3" library="my_rcl" deviceset="FB" device="-1608"/>
 </parts>
 <sheets>
 <sheet>
@@ -9594,8 +9595,8 @@ type 0207, grid 10 mm</description>
 <instance part="+3V6" gate="G$1" x="48.26" y="-25.4" smashed="yes">
 <attribute name="VALUE" x="45.72" y="-25.4" size="1.778" layer="96"/>
 </instance>
-<instance part="P+3" gate="1" x="-180.34" y="20.32" smashed="yes">
-<attribute name="VALUE" x="-182.88" y="22.86" size="1.778" layer="96"/>
+<instance part="P+3" gate="1" x="-195.58" y="20.32" smashed="yes">
+<attribute name="VALUE" x="-198.12" y="22.86" size="1.778" layer="96"/>
 </instance>
 <instance part="CON3" gate="G$1" x="-55.88" y="-63.5" smashed="yes">
 <attribute name="NAME" x="-60.96" y="-54.61" size="1.778" layer="95"/>
@@ -9622,6 +9623,10 @@ type 0207, grid 10 mm</description>
 <instance part="DECO1" gate="G$1" x="-154.94" y="48.26" smashed="yes">
 <attribute name="NAME" x="-154.94" y="49.53" size="2.54" layer="95"/>
 <attribute name="VALUE" x="-154.94" y="44.45" size="2.54" layer="96"/>
+</instance>
+<instance part="FB3" gate="G$1" x="-187.96" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="-182.88" y="16.51" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-182.88" y="22.86" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -10198,13 +10203,9 @@ type 0207, grid 10 mm</description>
 <junction x="243.84" y="55.88"/>
 </segment>
 <segment>
-<pinref part="IC9" gate="G$1" pin="IN"/>
-<wire x1="-175.26" y1="17.78" x2="-177.8" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="C26" gate="G$1" pin="1"/>
-<wire x1="-177.8" y1="17.78" x2="-180.34" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-177.8" y1="15.24" x2="-177.8" y2="17.78" width="0.1524" layer="91"/>
-<junction x="-177.8" y="17.78"/>
 <pinref part="P+3" gate="1" pin="+12V"/>
+<wire x1="-193.04" y1="17.78" x2="-195.58" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="FB3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$83" class="0">
@@ -11147,6 +11148,17 @@ type 0207, grid 10 mm</description>
 <pinref part="IC13" gate="G$1" pin="DP1/MISO_SPI/PWM"/>
 <wire x1="-147.32" y1="-30.48" x2="-149.86" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-149.86" y="-30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$56" class="0">
+<segment>
+<pinref part="IC9" gate="G$1" pin="IN"/>
+<wire x1="-175.26" y1="17.78" x2="-177.8" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="C26" gate="G$1" pin="1"/>
+<wire x1="-177.8" y1="15.24" x2="-177.8" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-177.8" y="17.78"/>
+<wire x1="-177.8" y1="17.78" x2="-182.88" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="FB3" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
