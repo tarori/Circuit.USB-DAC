@@ -4035,7 +4035,7 @@ design rules under a new name.
 <wire x1="4.445" y1="46.355" x2="4.445" y2="42.2275" width="0.2032" layer="16"/>
 <wire x1="4.445" y1="42.2275" x2="2.835" y2="40.6175" width="0.2032" layer="16"/>
 </signal>
-<signal name="GND">
+<signal name="GND" airwireshidden="yes">
 <contactref element="TP6" pad="1"/>
 <contactref element="TP7" pad="1"/>
 <contactref element="C32" pad="-"/>
@@ -4685,7 +4685,7 @@ design rules under a new name.
 <vertex x="65.24625" y="36.83"/>
 </polygon>
 </signal>
-<signal name="V-">
+<signal name="V-" airwireshidden="yes">
 <contactref element="C33" pad="-"/>
 <contactref element="IC11" pad="1"/>
 <contactref element="C36" pad="-"/>
@@ -4748,7 +4748,7 @@ design rules under a new name.
 </polygon>
 <wire x1="64.77" y1="55.88" x2="50.8" y2="55.88" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="+12V">
+<signal name="+12V" airwireshidden="yes">
 <contactref element="IC15" pad="3"/>
 <contactref element="IC14" pad="1"/>
 <contactref element="C39" pad="+"/>
@@ -5451,7 +5451,7 @@ design rules under a new name.
 <wire x1="95.5675" y1="80.08" x2="92.8" y2="80.08" width="0.3048" layer="1"/>
 <wire x1="92.8" y1="80.08" x2="92.71" y2="79.99" width="0.3048" layer="1"/>
 </signal>
-<signal name="HP_SW">
+<signal name="HP_SW" airwireshidden="yes">
 <contactref element="R59" pad="2"/>
 <contactref element="TP19" pad="1"/>
 <contactref element="IC13" pad="17"/>
@@ -5465,7 +5465,7 @@ design rules under a new name.
 <wire x1="95.25" y1="88.9" x2="95.25" y2="90.17" width="0.3048" layer="1"/>
 <wire x1="41.91" y1="48.26" x2="94.35" y2="86.36" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="SP_SW">
+<signal name="SP_SW" airwireshidden="yes">
 <contactref element="R57" pad="2"/>
 <contactref element="TP18" pad="1"/>
 <contactref element="IC13" pad="18"/>
