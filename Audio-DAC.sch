@@ -7602,6 +7602,7 @@ type 0207, grid 10 mm</description>
 <part name="R14" library="my_rcl" deviceset="R" device="-1608" value="1.5k"/>
 <part name="SUPPLY133" library="my_supply" deviceset="DGND" device=""/>
 <part name="SUPPLY116" library="my_supply" deviceset="GND" device=""/>
+<part name="FB4" library="my_rcl" deviceset="FB" device="-1608"/>
 </parts>
 <sheets>
 <sheet>
@@ -8731,6 +8732,20 @@ type 0207, grid 10 mm</description>
 <label x="281.94" y="35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="UART_RX" class="0">
+<segment>
+<pinref part="IC2" gate="G$2" pin="PX04"/>
+<wire x1="99.06" y1="10.16" x2="93.98" y2="10.16" width="0.1524" layer="91"/>
+<label x="93.98" y="10.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="UART_TX" class="0">
+<segment>
+<pinref part="IC2" gate="G$2" pin="PX05"/>
+<wire x1="99.06" y1="15.24" x2="93.98" y2="15.24" width="0.1524" layer="91"/>
+<label x="93.98" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -9440,6 +9455,10 @@ type 0207, grid 10 mm</description>
 <attribute name="VALUE" x="-182.88" y="22.86" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SUPPLY116" gate="GND" x="40.64" y="-30.48" smashed="yes"/>
+<instance part="FB4" gate="G$1" x="-58.42" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="-53.34" y="36.83" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-53.34" y="43.18" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10074,22 +10093,6 @@ type 0207, grid 10 mm</description>
 <label x="-58.42" y="127" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X3" gate="G$1" pin="VCC"/>
-<wire x1="-33.02" y1="17.78" x2="-35.56" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="C44" gate="G$1" pin="1"/>
-<wire x1="-35.56" y1="17.78" x2="-43.18" y2="17.78" width="0.1524" layer="91"/>
-<junction x="-35.56" y="17.78"/>
-<pinref part="X2" gate="G$1" pin="VCC"/>
-<wire x1="-33.02" y1="38.1" x2="-35.56" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="C43" gate="G$1" pin="1"/>
-<wire x1="-35.56" y1="38.1" x2="-43.18" y2="38.1" width="0.1524" layer="91"/>
-<junction x="-35.56" y="38.1"/>
-<wire x1="-43.18" y1="17.78" x2="-43.18" y2="38.1" width="0.1524" layer="91"/>
-<junction x="-43.18" y="38.1"/>
-<wire x1="-50.8" y1="38.1" x2="-43.18" y2="38.1" width="0.1524" layer="91"/>
-<label x="-50.8" y="38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="IC19" gate="G$1" pin="DEM0"/>
 <wire x1="35.56" y1="99.06" x2="38.1" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="99.06" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
@@ -10098,6 +10101,11 @@ type 0207, grid 10 mm</description>
 <wire x1="38.1" y1="96.52" x2="43.18" y2="96.52" width="0.1524" layer="91"/>
 <junction x="38.1" y="96.52"/>
 <label x="43.18" y="96.52" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="-68.58" y1="38.1" x2="-63.5" y2="38.1" width="0.1524" layer="91"/>
+<label x="-68.58" y="38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FB4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="DAC_VREF" class="0">
@@ -10977,6 +10985,24 @@ type 0207, grid 10 mm</description>
 <pinref part="IC20" gate="G$1" pin="P$1"/>
 <wire x1="50.8" y1="-12.7" x2="48.26" y2="-12.7" width="0.1524" layer="91"/>
 <label x="48.26" y="-12.7" size="1.524" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="X3" gate="G$1" pin="VCC"/>
+<wire x1="-33.02" y1="17.78" x2="-35.56" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="C44" gate="G$1" pin="1"/>
+<wire x1="-35.56" y1="17.78" x2="-43.18" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-35.56" y="17.78"/>
+<pinref part="X2" gate="G$1" pin="VCC"/>
+<wire x1="-33.02" y1="38.1" x2="-35.56" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="C43" gate="G$1" pin="1"/>
+<wire x1="-35.56" y1="38.1" x2="-43.18" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-35.56" y="38.1"/>
+<wire x1="-43.18" y1="17.78" x2="-43.18" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-43.18" y="38.1"/>
+<wire x1="-53.34" y1="38.1" x2="-43.18" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="FB4" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
