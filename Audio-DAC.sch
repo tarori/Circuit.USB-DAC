@@ -7345,7 +7345,7 @@ Takuo Sawada&lt;br&gt;
 <part name="C39" library="my_rcl" deviceset="CPOL" device="E2.5-8" value="220u"/>
 <part name="SUPPLY76" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY77" library="my_supply" deviceset="V+" device=""/>
-<part name="IC23" library="my_ic" deviceset="OPA-2" device="-SOP" value="OP275"/>
+<part name="IC23" library="my_ic" deviceset="OPA-2" device="-SOP"/>
 <part name="R39" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
 <part name="R40" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
 <part name="R44" library="my_rcl" deviceset="R" device="-1608" value="1k"/>
@@ -8805,6 +8805,7 @@ Takuo Sawada&lt;br&gt;
 <pinref part="IC5" gate="G$1" pin="OUT1"/>
 <pinref part="R30" gate="G$1" pin="1"/>
 <wire x1="274.32" y1="2.54" x2="284.48" y2="2.54" width="0.1524" layer="91"/>
+<label x="273.05" y="2.54" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="N$47" class="0">
