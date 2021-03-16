@@ -7513,10 +7513,10 @@ Takuo Sawada&lt;br&gt;
 <part name="TP26" library="my_connector" deviceset="TESTPIN" device="" value="+3V3D"/>
 <part name="TP9" library="my_connector" deviceset="TESTPIN" device="" value="+3V3"/>
 <part name="TP10" library="my_connector" deviceset="TESTPIN" device="" value="GND"/>
-<part name="TP12" library="my_connector" deviceset="TESTPIN" device="" value="TEST_9"/>
-<part name="TP13" library="my_connector" deviceset="TESTPIN" device="" value="TEST_10"/>
-<part name="TP14" library="my_connector" deviceset="TESTPIN" device="" value="TEST_14"/>
-<part name="TP23" library="my_connector" deviceset="TESTPIN" device="" value="TEST_11"/>
+<part name="TP12" library="my_connector" deviceset="TESTPIN" device="" value="TP9"/>
+<part name="TP13" library="my_connector" deviceset="TESTPIN" device="" value="TP10"/>
+<part name="TP14" library="my_connector" deviceset="TESTPIN" device="" value="TP14"/>
+<part name="TP23" library="my_connector" deviceset="TESTPIN" device="" value="TP11"/>
 <part name="R15" library="my_rcl" deviceset="R" device="-1608J" value="100"/>
 <part name="TP27" library="my_connector" deviceset="TESTPIN" device="-BIG" value="GND_L"/>
 <part name="TP28" library="my_connector" deviceset="TESTPIN" device="-BIG" value="SPK_L"/>
@@ -7612,6 +7612,8 @@ Takuo Sawada&lt;br&gt;
 <part name="R26" library="my_rcl" deviceset="R" device="-1608J" value="47"/>
 <part name="R30" library="my_rcl" deviceset="R" device="-1608J" value="47"/>
 <part name="R32" library="my_rcl" deviceset="R" device="-1608J" value="47"/>
+<part name="C68" library="my_rcl" deviceset="C" device="-1608" value="FF"/>
+<part name="C71" library="my_rcl" deviceset="C" device="-1608" value="FF"/>
 </parts>
 <sheets>
 <sheet>
@@ -8952,11 +8954,11 @@ Takuo Sawada&lt;br&gt;
 </instance>
 <instance part="Q4" gate="G$1" x="276.86" y="43.18" smashed="yes">
 <attribute name="NAME" x="281.94" y="43.18" size="1.778" layer="95"/>
-<attribute name="VALUE" x="281.94" y="40.64" size="1.778" layer="96"/>
+<attribute name="VALUE" x="281.94" y="39.37" size="1.778" layer="96"/>
 </instance>
 <instance part="Q3" gate="G$1" x="276.86" y="73.66" smashed="yes">
 <attribute name="NAME" x="281.94" y="73.66" size="1.778" layer="95"/>
-<attribute name="VALUE" x="281.94" y="71.12" size="1.778" layer="96"/>
+<attribute name="VALUE" x="281.94" y="69.85" size="1.778" layer="96"/>
 </instance>
 <instance part="R55" gate="G$1" x="279.4" y="63.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="277.9014" y="59.69" size="1.778" layer="95" rot="R90"/>
@@ -9364,11 +9366,11 @@ Takuo Sawada&lt;br&gt;
 </instance>
 <instance part="Q7" gate="G$1" x="259.08" y="109.22" smashed="yes">
 <attribute name="NAME" x="255.27" y="110.49" size="1.778" layer="95"/>
-<attribute name="VALUE" x="242.57" y="106.68" size="1.778" layer="96"/>
+<attribute name="VALUE" x="252.73" y="106.68" size="1.778" layer="96"/>
 </instance>
 <instance part="Q8" gate="G$1" x="259.08" y="124.46" smashed="yes">
 <attribute name="NAME" x="254" y="125.73" size="1.778" layer="95"/>
-<attribute name="VALUE" x="243.84" y="120.65" size="1.778" layer="96"/>
+<attribute name="VALUE" x="252.73" y="120.65" size="1.778" layer="96"/>
 </instance>
 <instance part="D3" gate="G$1" x="254" y="134.62" smashed="yes" rot="R90">
 <attribute name="NAME" x="250.19" y="139.7" size="1.778" layer="95" rot="R270"/>
@@ -9380,11 +9382,11 @@ Takuo Sawada&lt;br&gt;
 </instance>
 <instance part="Q9" gate="G$1" x="259.08" y="66.04" smashed="yes">
 <attribute name="NAME" x="252.73" y="67.31" size="1.778" layer="95"/>
-<attribute name="VALUE" x="245.11" y="60.96" size="1.778" layer="96"/>
+<attribute name="VALUE" x="252.73" y="62.23" size="1.778" layer="96"/>
 </instance>
 <instance part="Q10" gate="G$1" x="259.08" y="50.8" smashed="yes">
 <attribute name="NAME" x="252.73" y="53.34" size="1.778" layer="95"/>
-<attribute name="VALUE" x="242.57" y="48.26" size="1.778" layer="96"/>
+<attribute name="VALUE" x="252.73" y="48.26" size="1.778" layer="96"/>
 </instance>
 <instance part="D5" gate="G$1" x="254" y="76.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="250.19" y="80.01" size="1.778" layer="95" rot="R270"/>
@@ -9585,6 +9587,14 @@ Takuo Sawada&lt;br&gt;
 <attribute name="VALUE" x="-106.045" y="113.665" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="SUPPLY103" gate="GND" x="-106.68" y="104.14" smashed="yes"/>
+<instance part="C68" gate="G$1" x="238.76" y="124.46" smashed="yes">
+<attribute name="NAME" x="240.03" y="125.095" size="1.778" layer="95"/>
+<attribute name="VALUE" x="240.03" y="122.555" size="1.778" layer="96"/>
+</instance>
+<instance part="C71" gate="G$1" x="238.76" y="66.04" smashed="yes">
+<attribute name="NAME" x="240.03" y="66.675" size="1.778" layer="95"/>
+<attribute name="VALUE" x="240.03" y="64.135" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10280,6 +10290,9 @@ Takuo Sawada&lt;br&gt;
 <wire x1="292.1" y1="58.42" x2="284.48" y2="58.42" width="0.1524" layer="91"/>
 <junction x="284.48" y="58.42"/>
 <pinref part="L2" gate="G$1" pin="1"/>
+<pinref part="C71" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="68.58" x2="238.76" y2="71.12" width="0.1524" layer="91"/>
+<junction x="238.76" y="71.12"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -10324,6 +10337,9 @@ Takuo Sawada&lt;br&gt;
 <junction x="220.98" y="129.54"/>
 <wire x1="284.48" y1="149.86" x2="238.76" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="149.86" x2="238.76" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="C68" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="127" x2="238.76" y2="129.54" width="0.1524" layer="91"/>
+<junction x="238.76" y="129.54"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -10931,6 +10947,9 @@ Takuo Sawada&lt;br&gt;
 <pinref part="IC23" gate="G$1" pin="OUT"/>
 <wire x1="254" y1="116.84" x2="238.76" y2="116.84" width="0.1524" layer="91"/>
 <junction x="254" y="116.84"/>
+<pinref part="C68" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="116.84" x2="238.76" y2="121.92" width="0.1524" layer="91"/>
+<junction x="238.76" y="116.84"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -10970,6 +10989,9 @@ Takuo Sawada&lt;br&gt;
 <pinref part="IC23" gate="G$2" pin="OUT"/>
 <wire x1="254" y1="58.42" x2="238.76" y2="58.42" width="0.1524" layer="91"/>
 <junction x="254" y="58.42"/>
+<pinref part="C71" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="58.42" x2="238.76" y2="63.5" width="0.1524" layer="91"/>
+<junction x="238.76" y="58.42"/>
 </segment>
 </net>
 <net name="IOUTL-" class="0">
