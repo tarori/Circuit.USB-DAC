@@ -436,6 +436,20 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pad name="HT1" x="-8.9" y="3" drill="1.8"/>
 <pad name="HT2" x="8.9" y="3" drill="1.8"/>
 </package>
+<package name="HEATSINK4">
+<wire x1="31" y1="15" x2="31" y2="-15" width="0.3048" layer="21"/>
+<wire x1="31" y1="-15" x2="-31" y2="-15" width="0.3048" layer="21"/>
+<wire x1="-31" y1="-15" x2="-31" y2="15" width="0.3048" layer="21"/>
+<wire x1="-31" y1="15" x2="31" y2="15" width="0.3048" layer="21"/>
+<pad name="HT1" x="-27" y="-11" drill="2"/>
+<pad name="HT2" x="27" y="-11" drill="2"/>
+<wire x1="-24" y1="-15.5" x2="-16" y2="-15.5" width="1" layer="21"/>
+<wire x1="-11" y1="-15.5" x2="-3" y2="-15.5" width="1" layer="21"/>
+<wire x1="3" y1="-15.5" x2="11" y2="-15.5" width="1" layer="21"/>
+<wire x1="16" y1="-15.5" x2="24" y2="-15.5" width="1" layer="21"/>
+<text x="-30" y="16" size="2.54" layer="25">&gt;NAME</text>
+<text x="18" y="16" size="2.54" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -630,6 +644,14 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <device name="-3" package="HEATSINK3">
 <connects>
 <connect gate="G$2" pin="HT" pad="HT1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-4" package="HEATSINK4">
+<connects>
+<connect gate="G$2" pin="HT" pad="HT1 HT2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4433,10 +4455,10 @@ Takuo Sawada&lt;br&gt;
 <part name="SUPPLY78" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY79" library="my_supply" deviceset="GND" device=""/>
 <part name="SUPPLY81" library="my_supply" deviceset="GND" device=""/>
-<part name="Q1" library="my_ic" deviceset="NPN" device="-SOT223" value="NPN"/>
-<part name="Q2" library="my_ic" deviceset="PNP" device="-SOT223" value="PNP"/>
-<part name="Q4" library="my_ic" deviceset="PNP" device="-SOT223" value="PNP"/>
-<part name="Q3" library="my_ic" deviceset="NPN" device="-SOT223" value="NPN"/>
+<part name="Q1" library="my_ic" deviceset="NPN" device="2SC3422" value="NPN"/>
+<part name="Q2" library="my_ic" deviceset="PNP" device="2SA1359" value="PNP"/>
+<part name="Q4" library="my_ic" deviceset="PNP" device="2SA1359" value="PNP"/>
+<part name="Q3" library="my_ic" deviceset="NPN" device="2SC3422" value="NPN"/>
 <part name="R55" library="my_rcl" deviceset="R" device="-2.5" value="1"/>
 <part name="R56" library="my_rcl" deviceset="R" device="-2.5" value="1"/>
 <part name="R54" library="my_rcl" deviceset="R" device="-2.5" value="1"/>
@@ -4675,6 +4697,7 @@ Takuo Sawada&lt;br&gt;
 <part name="SUPPLY74" library="my_supply" deviceset="GND" device=""/>
 <part name="FL1" library="my_rcl" deviceset="FL" device="" value="0.1u"/>
 <part name="FL2" library="my_rcl" deviceset="FL" device="" value="0.1u"/>
+<part name="HT3" library="my_connector" deviceset="HEATSINK" device="-4"/>
 </parts>
 <sheets>
 <sheet>
@@ -6609,6 +6632,10 @@ Takuo Sawada&lt;br&gt;
 <attribute name="NAME" x="-170.18" y="93.98" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="-165.1" y="101.6" size="1.778" layer="96" rot="MR180"/>
 </instance>
+<instance part="HT3" gate="G$2" x="289.56" y="104.14" smashed="yes">
+<attribute name="NAME" x="289.56" y="105.41" size="2.54" layer="95"/>
+<attribute name="VALUE" x="289.56" y="100.33" size="2.54" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8222,6 +8249,7 @@ Takuo Sawada&lt;br&gt;
 </sheets>
 <errors>
 <approved hash="101,2,50.8,-27.94,IC20G$2,P$2,,,,"/>
+<approved hash="101,2,289.56,99.06,HT3,HT,,,,"/>
 <approved hash="104,1,-25.4,-5.08,CON1,GND,DGND,,,"/>
 <approved hash="104,1,-25.4,-7.62,CON1,XT,DGND,,,"/>
 <approved hash="104,1,55.88,66.04,IC2G$1,VDDIO1,+3V3D,,,"/>
